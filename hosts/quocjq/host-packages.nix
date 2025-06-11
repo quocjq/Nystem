@@ -5,5 +5,6 @@
     nodejs
     obs-studio
     firebase-tools
+    git-crypt
   ];
 }

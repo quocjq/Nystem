@@ -1,7 +1,8 @@
 {
   # Git Configuration ( For Pulling Software Repos )
-  gitUsername = "Tyler Kelley";
-  gitEmail = "tylerzanekelley@gmail.com";
+  gitUsername = "";
+  gitEmail = "";
+  gitToken = "";
 
   # Hyprland Settings
   # ex: extraMonitorSettings = "monitor = Virtual-1,1920x1080@60,auto,1";
@@ -35,8 +36,8 @@
   #waybarChoice = ../../modules/home/waybar/waybar-simple.nix;
   #waybarChoice = ../../modules/home/waybar/waybar-ddubs.nix;
   #waybarChoice = ../../modules/home/waybar/waybar-ddubs-2.nix;
-  #waybarChoice = ../../modules/home/waybar/Jerry-waybar.nix;
-  waybarChoice = ../../modules/home/waybar/waybar-curved.nix;
+  waybarChoice = ../../modules/home/waybar/Jerry-waybar.nix;
+  #waybarChoice = ../../modules/home/waybar/waybar-curved.nix;
 
   # Set Animation style
   # Available options are:
@@ -44,8 +45,9 @@
   # animations-end4.nix (end-4 project)
   # animations-dynamic.nix (ml4w project)
   # animations-moving.nix (ml4w project)
-  animChoice = ../../modules/home/hyprland/animations-def.nix;
+  animChoice = ../../modules/home/hyprland/animations-moving.nix;
 
   # Enable Thunar GUI File Manager
-  thunarEnable = false;
+  thunarEnable = true;
+  dns = [];
 }
