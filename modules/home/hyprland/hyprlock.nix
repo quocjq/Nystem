@@ -1,45 +1,106 @@
-{username, ...}: {
+{...}: {
   programs.hyprlock = {
     enable = true;
+
     settings = {
+      # Source and variables (these would typically be defined in your theme)
+      # source = "$HOME/.config/hypr/mocha.conf";
+
+      # Variables (in Nix, these are typically handled through let bindings or direct values)
       general = {
-        disable_loading_bar = true;
-        grace = 10;
         hide_cursor = true;
-        no_fade_in = false;
       };
+
       background = [
         {
-          path = "/home/${username}/Pictures/Wallpapers/beautifulmountainscape.jpg";
-          blur_passes = 3;
-          blur_size = 8;
+          monitor = "";
+          path = "$HOME/.config/background";
+          blur_passes = 0;
+          color = "$base";
         }
       ];
-      image = [
+
+      label = [
+        # LAYOUT
         {
-          path = "/home/${username}/.config/face.jpg";
-          size = 150;
-          border_size = 4;
-          border_color = "rgb(0C96F9)";
-          rounding = -1; # Negative means circle
-          position = "0, 200";
+          monitor = "";
+          text = "Layout: $LAYOUT";
+          color = "$text";
+          font_size = 25;
+          font_family = "JetBrainsMono Nerd Font";
+          position = "30, -30";
+          halign = "left";
+          valign = "top";
+        }
+        # TIME
+        {
+          monitor = "";
+          text = "$TIME";
+          color = "$text";
+          font_size = 90;
+          font_family = "JetBrainsMono Nerd Font";
+          position = "-30, 0";
+          halign = "right";
+          valign = "top";
+        }
+        # DATE
+        {
+          monitor = "";
+          text = "cmd[update:43200000] date +\"%A, %d %B %Y\"";
+          color = "$text";
+          font_size = 25;
+          font_family = "JetBrainsMono Nerd Font";
+          position = "-30, -150";
+          halign = "right";
+          valign = "top";
+        }
+        # FINGERPRINT
+        {
+          monitor = "";
+          text = "$FPRINTPROMPT";
+          color = "$text";
+          font_size = 14;
+          font_family = "JetBrainsMono Nerd Font";
+          position = "0, -107";
           halign = "center";
           valign = "center";
         }
       ];
+
+      image = [
+        # USER AVATAR
+        {
+          monitor = "";
+          path = "$HOME/.face";
+          size = 100;
+          border_color = "$accent";
+          position = "0, 75";
+          halign = "center";
+          valign = "center";
+        }
+      ];
+
       input-field = [
         {
-          size = "200, 50";
-          position = "0, -80";
           monitor = "";
+          size = "300, 60";
+          outline_thickness = 4;
+          dots_size = 0.2;
+          dots_spacing = 0.2;
           dots_center = true;
+          outer_color = "$accent";
+          inner_color = "$surface0";
+          font_color = "$text";
           fade_on_empty = false;
-          font_color = "rgb(CFE6F4)";
-          inner_color = "rgb(657DC2)";
-          outer_color = "rgb(0D0E15)";
-          outline_thickness = 5;
-          placeholder_text = "Password...";
-          shadow_passes = 2;
+          placeholder_text = "󰌾 Logged in as $USER";
+          hide_input = false;
+          check_color = "$accent";
+          fail_color = "$red";
+          fail_text = "$FAIL ($ATTEMPTS)";
+          capslock_color = "$yellow";
+          position = "0, -47";
+          halign = "center";
+          valign = "center";
         }
       ];
     };
