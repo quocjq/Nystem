@@ -2,7 +2,6 @@
   # Git Configuration ( For Pulling Software Repos )
   gitUsername = "quocjq";
   gitEmail = "quocjq@gmail.com";
-  gitToken = "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";
   # Hyprland Settings
   extraMonitorSettings = "monitor = eDP-1,1920x1080@60,auto,1.2";
   # Waybar Settings
