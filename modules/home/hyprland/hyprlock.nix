@@ -67,19 +67,6 @@
         }
       ];
 
-      image = [
-        # USER AVATAR
-        {
-          monitor = "";
-          path = "$HOME/.face";
-          size = 100;
-          border_color = "$accent";
-          position = "0, 75";
-          halign = "center";
-          valign = "center";
-        }
-      ];
-
       input-field = [
         {
           monitor = "";

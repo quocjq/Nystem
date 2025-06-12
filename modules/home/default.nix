@@ -35,5 +35,6 @@ in {
     ./yazi
     ./zoxide.nix
     ./zsh
+    ./tmux.nix
   ];
 }
