@@ -69,5 +69,9 @@
     ytmdl # Tool For Downloading Audio From YouTube
     python313
     gnome-control-center
+    tmuxPlugins.cpu
+    tmuxPlugins.vim-tmux-navigator
+    tmuxPlugins.tokyo-night-tmux
+    tmuxPlugins.tmux-sessionx
   ];
 }
