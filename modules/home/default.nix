@@ -36,5 +36,6 @@ in {
     ./zoxide.nix
     ./zsh
     ./tmux.nix
+    ./firefox.nix
   ];
 }
