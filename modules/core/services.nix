@@ -7,8 +7,7 @@
     openssh.enable = true; # Enable SSH
     blueman.enable = true; # Bluetooth Support
     tumbler.enable = true; # Image/video preview
-    gnome.gnome-keyring.enable = true;
-
+    xserver.desktopManager.gnome.enable = true;
     smartd = {
       enable =
         if profile == "vm"

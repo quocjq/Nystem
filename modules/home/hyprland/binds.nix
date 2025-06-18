@@ -12,7 +12,7 @@ in {
       "$modifier SHIFT,W,exec,web-search"
       "$modifier ALT,W,exec,wallsetter"
       "$modifier,W,exec,${browser}"
-      "$modifier,Y,exec,kitty -e yazi"
+      "$modifier,E,exec,thunar"
       "$modifier,comma,exec,emopicker9000"
       "$modifier,S,exec,screenshootin"
       "$modifier,D,exec,discord"

@@ -73,5 +73,6 @@
     tmuxPlugins.vim-tmux-navigator
     tmuxPlugins.tokyo-night-tmux
     tmuxPlugins.tmux-sessionx
+    kdePackages.kdenlive
   ];
 }
