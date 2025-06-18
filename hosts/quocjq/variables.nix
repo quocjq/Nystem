@@ -19,7 +19,7 @@
   # Enable Printing Support
   printEnable = false;
   # Set Stylix Image
-  stylixImage = ../../wallpapers/AnimeGirlNightSky.jpg;
+  stylixImage = ../../wallpapers/nix-wallpaper-stripes-logo.png;
   # Set Waybar
   #  Available Options:
   #waybarChoice = ../../modules/home/waybar/waybar-simple.nix;

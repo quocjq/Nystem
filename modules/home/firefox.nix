@@ -1,11 +1,9 @@
-{
-  config,
-  pkgs,
-  ...
-}: {
+{pkgs, ...}: {
   programs.firefox = {
     enable = true;
-    profile.quocjq = {
+    package = pkgs.firefox;
+    languagePacks = ["en-US" "vi"];
+    profiles.default = {
       userChrome = ''
          /*
          *  Hi~

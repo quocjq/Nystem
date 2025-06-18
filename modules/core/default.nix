@@ -17,10 +17,13 @@
     ./stylix.nix
     ./syncthing.nix
     ./system.nix
+    ./spicetify-nix.nix
     ./thunar.nix
     ./user.nix
     ./virtualisation.nix
     ./xserver.nix
+    ./obs.nix
     inputs.stylix.nixosModules.stylix
+    inputs.spicetify-nix.nixosModules.spicetify
   ];
 }

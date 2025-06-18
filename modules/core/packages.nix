@@ -6,6 +6,7 @@
     };
     dconf.enable = true;
     seahorse.enable = true;
+    firefox.enable = true;
     hyprland.enable = true; #create desktop file and depedencies if you switch to GUI login MGR
     hyprlock.enable = true; #resolve pam issue https://gitlab.com/Zaney/zaneyos/-/issues/164
     fuse.userAllowOther = true;
