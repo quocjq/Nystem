@@ -74,5 +74,8 @@
     tmuxPlugins.tokyo-night-tmux
     tmuxPlugins.tmux-sessionx
     kdePackages.kdenlive
+    obsidian
+    pandoc
+    texliveBasic
   ];
 }

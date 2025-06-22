@@ -2,6 +2,7 @@
   host,
   pkgs,
   config,
+  inputs,
   ...
 }: {
   boot = {
@@ -17,6 +18,7 @@
       memtest86.enable = true;
       extraGrubInstallArgs = ["--bootloader-id=${host}"];
       configurationName = "${host}";
+      theme = inputs.nixos-grub-themes.packages.${pkgs.system}.nixos;
     };
     loader.efi.canTouchEfiVariables = true;
     # Appimage Support

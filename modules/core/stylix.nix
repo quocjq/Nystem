@@ -54,6 +54,9 @@ in {
         popups = 12;
       };
     };
-    targets.spicetify.enable = false;
+    targets = {
+      spicetify.enable = false;
+      grub.enable = false;
+    };
   };
 }

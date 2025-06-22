@@ -11,7 +11,7 @@ in {
       adblock
       keyboardShortcut
       showQueueDuration
-      beautifulLyrics
+      fullScreen
     ];
     enabledCustomApps = with spicePkgs.apps; [
       marketplace
@@ -20,8 +20,10 @@ in {
     enabledSnippets = with spicePkgs.snippets; [
       rotatingCoverart
       pointer
+      removeDuplicatedFullscreenButton
     ];
 
-    theme = spicePkgs.themes.bloom;
+    theme = spicePkgs.themes.catppuccin;
+    colorScheme = "macchiato";
   };
 }

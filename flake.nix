@@ -10,6 +10,7 @@
     nvf.url = "github:notashelf/nvf";
     stylix.url = "github:danth/stylix/release-25.05";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+    nixos-grub-themes.url = "github:jeslie0/nixos-grub-themes";
   };
 
   outputs = {nixpkgs, ...} @ inputs: let
