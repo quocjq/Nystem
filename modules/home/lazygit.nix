@@ -1,9 +1,5 @@
 # Lazygit is a simple terminal UI for git commands.
-{ config, lib, ... }:
-let
-  accent = "#${config.lib.stylix.colors.base0D}";
-  muted = "#${config.lib.stylix.colors.base03}";
-in {
+{lib, ...}: {
   programs.lazygit = {
     enable = true;
     settings = lib.mkForce {
@@ -16,10 +12,6 @@ in {
         parseEmoji = true;
       };
       gui = {
-        theme = {
-          activeBorderColor = [ accent "bold" ];
-          inactiveBorderColor = [ muted ];
-        };
         showListFooter = false;
         showRandomTip = false;
         showCommandLog = false;

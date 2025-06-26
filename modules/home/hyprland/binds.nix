@@ -13,7 +13,6 @@ in {
       "$modifier ALT,W,exec,wallsetter"
       "$modifier,W,exec,${browser}"
       "$modifier,E,exec,thunar"
-      "$modifier,comma,exec,emopicker9000"
       "$modifier,S,exec,screenshootin"
       "$modifier,D,exec,discord"
       "$modifier,O,exec,obsidian"

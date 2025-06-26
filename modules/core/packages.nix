@@ -77,5 +77,6 @@
     obsidian
     pandoc
     texliveBasic
+    brave
   ];
 }

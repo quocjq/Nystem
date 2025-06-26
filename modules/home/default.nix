@@ -7,7 +7,6 @@ in {
     ./bat.nix
     ./btop.nix
     ./cava.nix
-    ./emoji.nix
     ./eza.nix
     ./fastfetch
     ./fzf.nix
@@ -23,16 +22,12 @@ in {
     ./rofi
     ./qt.nix
     ./scripts
-    ./starship.nix
-    ./stylix.nix
     ./swappy.nix
     ./swaync.nix
     ./virtmanager.nix
     waybarChoice
-    ./wezterm.nix
     ./wlogout
     ./xdg.nix
-    ./yazi
     ./zoxide.nix
     ./zsh
     ./tmux.nix

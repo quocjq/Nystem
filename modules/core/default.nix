@@ -13,8 +13,6 @@
     ./security.nix
     ./services.nix
     ./starfish.nix
-    ./steam.nix
-    ./stylix.nix
     ./syncthing.nix
     ./system.nix
     ./spicetify-nix.nix
@@ -23,7 +21,6 @@
     ./virtualisation.nix
     ./xserver.nix
     ./obs.nix
-    inputs.stylix.nixosModules.stylix
     inputs.spicetify-nix.nixosModules.spicetify
   ];
 }

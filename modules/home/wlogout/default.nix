@@ -71,7 +71,6 @@
 
        button:hover {
          background-color: transparent;
-         color: #${config.lib.stylix.colors.base05};
          background-size: 50%;
          margin: 30px;
          border-radius: 80px;

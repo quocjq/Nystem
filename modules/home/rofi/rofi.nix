@@ -21,15 +21,15 @@
         inherit (config.lib.formats.rasi) mkLiteral;
       in {
         "*" = {
-          bg = mkLiteral "#${config.stylix.base16Scheme.base00}";
-          bg-alt = mkLiteral "#${config.stylix.base16Scheme.base09}";
-          foreground = mkLiteral "#${config.stylix.base16Scheme.base01}";
-          selected = mkLiteral "#${config.stylix.base16Scheme.base08}";
-          active = mkLiteral "#${config.stylix.base16Scheme.base0B}";
-          text-selected = mkLiteral "#${config.stylix.base16Scheme.base00}";
-          text-color = mkLiteral "#${config.stylix.base16Scheme.base05}";
-          border-color = mkLiteral "#${config.stylix.base16Scheme.base0F}";
-          urgent = mkLiteral "#${config.stylix.base16Scheme.base0E}";
+          bg = mkLiteral "#0F1419";
+          bg-alt = mkLiteral "#FF8F40";
+          foreground = mkLiteral "#131721";
+          selected = mkLiteral "#F07178";
+          active = mkLiteral "#B8CC52";
+          text-selected = mkLiteral "#0F1419";
+          text-color = mkLiteral "#E6E1CF";
+          border-color = mkLiteral "E6B673";
+          urgent = mkLiteral "#D2A6FF";
         };
         "window" = {
           transparency = "real";
